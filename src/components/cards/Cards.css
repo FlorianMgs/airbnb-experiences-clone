@@ -1,0 +1,41 @@
+.card {
+    max-width: 176px;
+}
+
+.card--photo__state {
+    position: relative;
+}
+
+.card--photo {
+    height: 235px;
+    width: 176px;
+}
+
+.card--state {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    font-size: 10px;
+    background-color: aliceblue;
+    border: 0px solid aliceblue;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.card--note {
+    font-size: 12px;
+}
+
+.star {
+    height: 12px;
+    margin-right: 3px;
+}
+
+.card--reviews {
+    color: #918E9B;
+}
+
+.card--description, .card--price {
+    margin: 4px 0px 0px 0px;
+    font-size: 12px;
+}
