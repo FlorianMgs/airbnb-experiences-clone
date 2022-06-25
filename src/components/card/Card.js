@@ -5,14 +5,14 @@ export default function Card(props) {
     return (
         <div className="card">
             <div className="card--photo__available">
-                <button className="card--available">{props.available}</button>
-                <img className="card--photo" src={props.img} alt=""/>
+                <div className="card--badge">{props.openSpots > 0 ? "AVAILABLE" : "SOLD OUT"}</div>
+                <img className="card--photo" src={props.coverImg} alt=""/>
             </div>
             <div className="card--note">
                 <img className="star" src={Star} alt=""/>
-                {props.rating} <span className="card--reviews">({props.reviews}) • {props.country}</span>
+                {props.stats.rating} <span className="card--reviews">({props.stats.reviewCount}) • {props.location}</span>
             </div>
-            <p className="card--description">{props.descripion}</p>
+            <p className="card--description">{props.title}</p>
             <p className="card--price"><b>From ${props.price}</b> / person</p>
         </div>
     )

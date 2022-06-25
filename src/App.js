@@ -9,13 +9,7 @@ function App() {
     return (
       <Card 
         key={item.id}
-        img={item.coverImg}
-        rating={item.stats.rating}
-        reviews={item.stats.reviewCount}
-        available={item.openSpots > 0 ? "AVAILABLE" : "SOLD OUT"}
-        country={item.location}
-        description={item.description}
-        price={item.price}
+        {...item}
       />
     )
   })
